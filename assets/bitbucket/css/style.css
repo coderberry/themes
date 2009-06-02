@@ -3,3 +3,76 @@ body {
 	padding: 0px;
 	background: #fff url('/themes/bitbucket/images/bg_header.png') top left repeat-x;
 }
+
+/* ==== COMMON ==== */
+
+.clear {
+	clear: both;
+}
+
+.small {
+	font-size: 11px;
+}
+
+a {
+	color: #525252;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+/* ==== HEADER ==== */
+
+#logo {
+	padding-top: 4px;
+	float: left;
+}
+
+#logo a {
+	font-size: 26px;
+}
+
+#navigation {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navigation li {
+	float: left;
+	list-style: none;
+}
+
+#navigation li a {
+	font-size: 14px;
+	line-height: 45px;
+	margin-left: 15px;
+}
+
+/* ==== CONTENTS ==== */
+
+#contents {
+	padding-top: 15px;
+}
+
+#page_title_container {
+	padding: 0px 0px 15px 0px;
+}
+
+h1.title {
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+}
+
+h3.subtitle {
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+	color: #666;
+}
