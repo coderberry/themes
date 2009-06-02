@@ -1,12 +1,14 @@
 require File.dirname(__FILE__) + '/../../../config/boot'
 
+directory = File.join(RAILS_ROOT, '/vendor/plugins/themes/')
+
 def xcopy(options)
   source  = options[:source]
   dest    = options[:dest]
   logging = options[:logging].nil? ? true : options[:logging]
   
   Dir.foreach(source) do |entry|
-    next if entry =~ /~\./
+    next if entry =~ /^\./
     if File.directory?(File.join(source, entry))
       unless File.exist?(File.join(dest, entry))
         if logging
@@ -28,7 +30,7 @@ end
 
 puts "** Installing Theme Assets **"
 
-src = File.join(File.dirname(__FILE__), 'assets')
+src = File.join(directory, '/assets/')
 dst = File.join(RAILS_ROOT, '/public/themes/')
 
 unless File.exists?(dst)
