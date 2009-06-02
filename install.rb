@@ -26,7 +26,7 @@ end
 
 puts "** Installing Theme Assets **"
 
-src = File.join(File.dirname(__FILE__), 'assets'))
+src = File.join(File.dirname(__FILE__), 'assets')
 dst = File.join(RAILS_ROOT, '/public/themes/')
 
 unless File.exists?(dst)
