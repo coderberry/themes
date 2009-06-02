@@ -1,13 +1,21 @@
 Themes
 ======
 
-Introduction goes here.
+Quickly add a theme to your application and change the theme at any time.
+
+Useage
+======
+
+Use the helper 'use_theme(theme_name)' in your <head> tag.
+
+For example:
+
+<%= use_theme('bitbucket') %>
+
+Available Themes
+================
+
+bitbucket - Gray gradient header bar and white below
 
 
-Example
-=======
-
-Example goes here.
-
-
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Eric Berry, released under the MIT license
