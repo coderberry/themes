@@ -1,1 +1,2 @@
-# Include hook code here
+require 'theme'
+ActionView::Base.send(:include, Theme::ThemeHelper)
