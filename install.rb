@@ -1,3 +1,5 @@
+require File.dirname(__FILE__) + '/../../../config/boot'
+
 def xcopy(options)
   source  = options[:source]
   dest    = options[:dest]
