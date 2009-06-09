@@ -12,7 +12,7 @@ Usage
   
     <%= use_theme('bitbucket') %>
   
-  To use the default layout for these themes, use the layout 'themes'
+  To use the default layout for these themes, add the following to application_controller.rb
   
     layout 'themes'
 

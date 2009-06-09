@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Untitled</title>
+    <%= use_theme('bitbucket') %>
+  </head>
+  <body>
+  
+    <div id='root'>
+      <div id='header'>
+
+        <div id='logo'>
+          <%= link_to image_tag('logo', :border => 0, :alt => "My App"), root_url %>
+        </div>
+        
+        <ul id='navigation'>
+          <li><%= link_to "Home" %></li>
+          
+          <% if session[:user_id].blank? %>
+            <li><%= link_to "Log in" %></li>
+            <li><%= link_to "Log in" %></li>
+
+          <% else %>
+            <li><%= link_to "Log out <span class=\"small\">(username)</span>" %></li>
+          
+          <% end %>
+        </ul>
+        <div class='clear'></div>
+      </div>
+
+      <div id='contents'>
+        <div id='page_title_container'>
+          <h1 class='title'><%= yield(:title) || "Untitled" %></h1>
+          <h3 class='subtitle'><%= yield(:subtitle) || "Description goes here" %></h3>
+        </div>
+        
+        <%= yield %>
+        
+        <div id='root_footer'></div>
+
+      </div>
+      
+      <div id='footer'>
+        &copy <%= Time.now.year %> Me. All Rights Reserved.
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -39,15 +39,19 @@ unless File.exists?(dst)
 end
 xcopy(:source => src, :dest => dst, :logging => true)
 
-src2 = File.join(directory, '/templates/')
-dst2 = File.join(RAILS_ROOT, '/views/layouts/')
-
-unless File.exists?(dst)
-  puts "Creating destination directory..."
-  FileUtils.mkdir(dst)
-end
-xcopy(:source => src, :dest => dst, :logging => true)
-
 puts "** Successfully Installed Theme Assets **"
+
+puts "** Installing Theme Layouts **"
+
+src2 = File.join(directory, '/templates/')
+dst2 = File.join(RAILS_ROOT, '/app/views/layouts/')
+
+unless File.exists?(dst2)
+  puts "Creating destination directory..."
+  FileUtils.mkdir(dst2)
+end
+xcopy(:source => src2, :dest => dst2, :logging => true)
+
+puts "** Successfully Installed Theme Layouts **"
 
 puts IO.read(File.join(File.dirname(__FILE__), 'README'))
