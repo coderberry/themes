@@ -1,27 +1,24 @@
-Themes
-======
+== Themes
 
-  Quickly add a theme to your application and change the theme at any time.
+Quickly add a theme to your application and change the theme at any time.
 
-Usage
-=====
+== Usage
 
-  Use the helper 'use_theme(theme_name)' in your <head> tag.
+Use the helper 'use_theme(theme_name)' in your <head> tag.
   
-  For example:
+For example:
   
-    <%= use_theme('bitbucket') %>
+  <%= use_theme('bitbucket') %>
   
-  To use the default layout for these themes, add the following to application_controller.rb
+To use the default layout for these themes, add the following to application_controller.rb
   
-    layout 'themes'
+  layout 'themes'
 
-Available Themes
-================
+== Available Themes
 
-  bitbucket - Gray gradient header bar and white below
+bitbucket - Gray gradient header bar and white below
 
-  slicehost - Blue menu with hover effects and white header
+slicehost - Blue menu with hover effects and white header
 
 
 Copyright (c) 2009 Eric Berry, released under the MIT license
