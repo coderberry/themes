@@ -20,3 +20,7 @@ bitbucket - Gray gradient header bar and white below
 
 slicehost - Blue menu with hover effects and white header
 
+== How to Contribute
+
+Please help me add additional themes to this plugin.  Let me know if you are wanting to contribute, and I will add you as a contributor.
+
