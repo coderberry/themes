@@ -1,4 +1,4 @@
-== Themes
+= Themes
 
 Quickly add a theme to your application and change the theme at any time.
 
@@ -20,5 +20,3 @@ bitbucket - Gray gradient header bar and white below
 
 slicehost - Blue menu with hover effects and white header
 
-
-Copyright (c) 2009 Eric Berry, released under the MIT license
