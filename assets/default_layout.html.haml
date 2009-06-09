@@ -1,0 +1,48 @@
+%html
+  %head
+    %title Untitled
+    = use_theme('bitbucket')
+    
+  %body
+
+    #root
+      #header
+
+        #logo
+          = link_to image_tag('logo', :border => 0, :alt => "My App"), root_url
+
+        %ul#navigation
+        
+          %li
+            = link_to "Home", root_url
+
+          - if session[:user_id].blank?
+            %li  
+              = link_to "Log in"
+            %li  
+              = link_to "Sign up"
+          
+          - else
+            %li 
+              = link_to "Log out <span class=\"small\">(username)</span>"
+
+        .clear
+
+      #contents
+        
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+
+        #page_title_container
+          
+          %h1.title
+            = yield(:title) || "Untitled"
+            
+          %h3.subtitle
+            = yield(:subtitle) || "Description goes here"
+
+        = yield
+
+        #root_footer
+          
+          &copy #{Time.now.year} Me. All Rights Reserved.

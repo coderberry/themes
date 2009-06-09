@@ -1,0 +1,107 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #ddd url('/themes/slicehost/images/background.png') top left repeat-x;
+}
+
+/* ==== COMMON ==== */
+
+.clear {
+	clear: both;
+}
+
+.small {
+	font-size: 11px;
+}
+
+a {
+	color: #525252;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+/* ==== HEADER ==== */
+
+#logo {
+	line-height: 81px;
+	height: 81px;
+}
+
+#logo a {
+	font-size: 26px;
+}
+
+#navigation {
+	background: #1522B2 url('/themes/slicehost/images/menu_background.png') repeat-x scroll left top;
+	color: #FFFFFF;
+	height: 49px;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	background: #1522B2 url('/themes/slicehost/images/menu_background.png') repeat-x scroll left top;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li.active {
+	background-position: 0 -98px;
+}
+
+#navigation li.active:hover {
+	background-position: 0 -98px;
+}
+
+#navigation li:hover {
+	background-position: 0 -49px;
+}
+
+#navigation li a {
+	color: #FFFFFF;
+	font-size: 140%;
+	line-height: 49px;
+	padding: 13px 20px;
+	text-decoration: none;
+}
+
+/* ==== CONTENTS ==== */
+
+#contents {
+	background-color: #fff;
+	padding: 15px;
+	border-bottom: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+}
+
+#page_title_container {
+	padding: 0px 0px 15px 0px;
+}
+
+h1.title {
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+}
+
+h3.subtitle {
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+	color: #666;
+}
+
+/* ==== FOOTER ==== */
+
+#footer {
+	text-align: right;
+	color: #666;
+}
