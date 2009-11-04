@@ -1,6 +1,7 @@
 %html
   %head
-    %title Untitled
+    %title 
+      = "#{SITE_CONFIG[:app_name]} | #{yield(:title)}"
     = use_theme('bitbucket')
     
   %body
@@ -9,7 +10,7 @@
       #header
 
         #logo
-          = link_to image_tag('logo', :border => 0, :alt => "My App"), root_url
+          = link_to image_tag('logo.png', :border => 0, :alt => SITE_CONFIG[:app_name])
 
         %ul#navigation
         
@@ -29,9 +30,6 @@
         .clear
 
       #contents
-        
-        - flash.each do |name, msg|
-          = content_tag :div, msg, :id => "flash_#{name}"
 
         #page_title_container
           
@@ -40,9 +38,11 @@
             
           %h3.subtitle
             = yield(:subtitle) || "Description goes here"
+        
+        = display_flash(flash)
 
         = yield
 
         #root_footer
           
-          &copy #{Time.now.year} Me. All Rights Reserved.
+          &copy #{Time.now.year} #{SITE_CONFIG[:copyright]}. All Rights Reserved.
