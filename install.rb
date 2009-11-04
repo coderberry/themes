@@ -51,16 +51,16 @@ puts "** Successfully Installed Theme Layouts **"
 puts "** Installing Site Config **"
 src = File.join(directory, '/config/')
 dst = File.join(RAILS_ROOT, '/config/')
-xcopy(:source => src3, :dest => dst3, :logging => true)
+xcopy(:source => src, :dest => dst, :logging => true)
 src = File.join(directory, '/initializers/')
 dst = File.join(RAILS_ROOT, '/config/initializers/')
-xcopy(:source => src3, :dest => dst3, :logging => true)
+xcopy(:source => src, :dest => dst, :logging => true)
 puts "** Successfully Installed Site Config **"
 
 puts "** Installing Helpers **"
-src = File.join(directory, '/app/helpers/')
-dst = File.join(RAILS_ROOT, '/helpers/')
+src = File.join(directory, '/helpers/')
+dst = File.join(RAILS_ROOT, '/app/helpers/')
 xcopy(:source => src, :dest => dst, :logging => true)
 puts "** Successfully Installed Helpers **"
 
-puts IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
+puts IO.read(File.join(directory, 'README.rdoc'))
