@@ -29,29 +29,38 @@ def xcopy(options)
 end
 
 puts "** Installing Theme Assets **"
-
 src = File.join(directory, '/assets/')
 dst = File.join(RAILS_ROOT, '/public/themes/')
-
 unless File.exists?(dst)
   puts "Creating destination directory..."
   FileUtils.mkdir(dst)
 end
 xcopy(:source => src, :dest => dst, :logging => true)
-
 puts "** Successfully Installed Theme Assets **"
 
 puts "** Installing Theme Layouts **"
-
-src2 = File.join(directory, '/templates/')
-dst2 = File.join(RAILS_ROOT, '/app/views/layouts/')
-
-unless File.exists?(dst2)
+src = File.join(directory, '/templates/')
+dst = File.join(RAILS_ROOT, '/app/views/layouts/')
+unless File.exists?(dst)
   puts "Creating destination directory..."
-  FileUtils.mkdir(dst2)
+  FileUtils.mkdir(dst)
 end
-xcopy(:source => src2, :dest => dst2, :logging => true)
-
+xcopy(:source => src, :dest => dst, :logging => true)
 puts "** Successfully Installed Theme Layouts **"
 
-puts IO.read(File.join(File.dirname(__FILE__), 'README'))
+puts "** Installing Site Config **"
+src = File.join(directory, '/config/')
+dst = File.join(RAILS_ROOT, '/config/')
+xcopy(:source => src3, :dest => dst3, :logging => true)
+src = File.join(directory, '/initializers/')
+dst = File.join(RAILS_ROOT, '/config/initializers/')
+xcopy(:source => src3, :dest => dst3, :logging => true)
+puts "** Successfully Installed Site Config **"
+
+puts "** Installing Helpers **"
+src = File.join(directory, '/app/helpers/')
+dst = File.join(RAILS_ROOT, '/helpers/')
+xcopy(:source => src, :dest => dst, :logging => true)
+puts "** Successfully Installed Helpers **"
+
+puts IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))

@@ -105,3 +105,20 @@ h3.subtitle {
 	text-align: right;
 	color: #666;
 }
+
+/* ==== FLASH ==== */
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}

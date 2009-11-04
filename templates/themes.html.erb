@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Untitled</title>
+    <title><%=h SITE_CONFIG[:app_name] %> | <%=h yield(:title) %></title>
     <%= use_theme('bitbucket') %>
   </head>
   <body>
@@ -9,15 +9,15 @@
       <div id='header'>
 
         <div id='logo'>
-          <%= link_to image_tag('logo', :border => 0, :alt => "My App"), root_url %>
+          <%= link_to image_tag('logo', :border => 0, :alt => SITE_CONFIG[:app_name]) %>
         </div>
         
         <ul id='navigation'>
           <li><%= link_to "Home" %></li>
           
-          <% if session[:user_id].blank? %>
+          <% if session[:user_id].blank? # This is a stub %>
             <li><%= link_to "Log in" %></li>
-            <li><%= link_to "Log in" %></li>
+            <li><%= link_to "Contact us" %></li>
 
           <% else %>
             <li><%= link_to "Log out <span class=\"small\">(username)</span>" %></li>
@@ -33,6 +33,8 @@
           <h3 class='subtitle'><%= yield(:subtitle) || "Description goes here" %></h3>
         </div>
         
+        <%= display_flash(flash) %>
+        
         <%= yield %>
         
         <div id='root_footer'></div>
@@ -40,7 +42,7 @@
       </div>
       
       <div id='footer'>
-        &copy <%= Time.now.year %> Me. All Rights Reserved.
+        &copy <%= Time.now.year %> <%=h SITE_CONFIG[:copyright] %>. All Rights Reserved.
       </div>
       
     </div>
