@@ -2,6 +2,8 @@
 
 Quickly add a theme to your application and change the theme at any time.
 
+<a href="https://staging.codesponsor.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow"><img src="https://staging.codesponsor.io/embed/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+
 ## Usage
 
 Use the helper `use_theme(theme_name)` in your <head> tag.
@@ -23,5 +25,3 @@ To use the default layout for these themes, add the following to application_con
 ## How to Contribute
 
 Please help me add additional themes to this plugin.  Let me know if you are wanting to contribute, and I will add you as a contributor.
-
-<a href="https://app.codesponsor.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow"><img src="https://app.codesponsor.io/embed/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
