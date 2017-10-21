@@ -2,7 +2,7 @@
 
 Quickly add a theme to your application and change the theme at any time.
 
-<a href="https://staging.codesponsor.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow"><img src="https://staging.codesponsor.io/embed/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+<a href="https://cavneb.ngrok.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow"><img src="https://cavneb.ngrok.io/embed/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
 
 ## Usage
 
