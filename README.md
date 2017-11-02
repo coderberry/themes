@@ -2,7 +2,11 @@
 
 Quickly add a theme to your application and change the theme at any time.
 
-<a href="https://cavneb.ngrok.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow"><img src="https://cavneb.ngrok.io/embed/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+<p align="center">
+  <a href="https://cavneb.ngrok.io/link/Z24Ypyn8iC1Q4i6uCwNyLW3r/cavneb/themes" rel="nofollow">
+    <img src="https://www.evernote.com/l/AAOF5C7cSnlPi4jEzDJoefIqoLtHbnE1g3YB/image.png" width="330" height="90" alt="Sponsor" />
+  </a>
+</p>
 
 ## Usage
 
